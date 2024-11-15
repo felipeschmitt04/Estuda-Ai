@@ -1,0 +1,6 @@
+@import "/assets/css/global/global.css";
+@import "/assets/css/pages/login/partials/section1.css";
+
+.login-card{
+    font-family: fontBold;
+}

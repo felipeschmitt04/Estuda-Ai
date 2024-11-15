@@ -1,0 +1,108 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/imgs/login-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-card{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    border: solid 1px rgba(46, 45, 45, 0.2);
+    padding: 25px 35px;
+    text-align: center;
+    width: 400px;
+    color: rgb(74, 65, 65);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.login-icon{
+    margin: 30px;
+}
+
+.input-field{
+    position: relative;
+    margin-bottom: 20px;
+    background: #C5E9F7;
+    width: 100%;
+    color: #88B9BE;
+    border-radius: 12px;
+}
+
+.input-field input{
+    background: none;
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    width: 75%;
+    outline: none;
+    color: #3c5052;
+}
+
+.email-icon{
+    position: absolute;
+    left: 8px;
+    top: 12px;
+}
+
+.senha-icon{
+    position: absolute;
+    left: 8px;
+    top: 7px
+}
+
+.olho-icon{
+    position: absolute;
+    right: 8px;
+    top: 11px
+}
+
+.input-field img#togglePassword{
+    cursor: pointer;
+}
+
+.options{
+    text-align: right;
+    margin-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.options a{
+    color: #5059ff;
+    font-size: 15px;
+    font-family: fontRegular;
+}
+
+.options a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.login-button{
+    width: 100%;
+    height: 40px;
+    border-radius: 12px;
+    color: white;
+    background-color: #7186CB;
+    font-family: fontBold;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login-button:hover{
+    background-color: #3e5dc3;
+    transition: 0.2s;
+}

@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Estuda Aí</title>
-    <link rel="stylesheet" href="./css/login.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/pages/login.css" />
+  </head>
+
+  <body>
+    <section class="login-container">
+      <div class="login-card">
+        <h2>Faça login para acessar o Estuda Aí</h2>
+        <div class="login-icon">
+          <img src="/assets/imgs/login-icon.svg" alt="login-icon" />
+        </div>
+        <form>
+          <div class="input-field">
+            <img
+              class="email-icon"
+              src="/assets/imgs/email-icon.svg"
+              alt="email-icon"
+            />
+            <input type="email" required placeholder="Email" />
+          </div>
+          <div class="input-field">
+            <img
+              class="senha-icon"
+              src="/assets/imgs/senha-icon.svg"
+              alt="senha-icon"
+            />
+            <input type="password" id="password" placeholder="Senha" required />
+            <img
+              class="olho-icon"
+              src="/assets/imgs/olho-icon.svg"
+              alt="olho-icon"
+              id="togglePassword"
+            />
+          </div>
+          <div class="options">
+            <a href="#">Esqueceu a senha?</a>
+          </div>
+          <input class="login-button" type="button" value="Login" />
+        </form>
+      </div>
+    </section>
+    <script src="/assets/js/tela-login.js" defer></script>
+  </body>
 </html>
