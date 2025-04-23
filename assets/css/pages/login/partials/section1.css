@@ -39,6 +39,11 @@ body{
     width: 100%;
     color: #88B9BE;
     border-radius: 12px;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #3c5052; 
 }
 
 .input-field input{
@@ -46,9 +51,10 @@ body{
     border: none;
     font-size: 16px;
     height: 40px;
-    width: 75%;
+    width: 83%;
     outline: none;
     color: #3c5052;
+    padding-left: 10px;
 }
 
 .email-icon{
@@ -59,7 +65,7 @@ body{
 
 .senha-icon{
     position: absolute;
-    left: 8px;
+    left: 4px;
     top: 7px
 }
 
@@ -114,7 +120,6 @@ p{
 
 .cadastre-link{
     color: #5059ff;
-    rgb(74, 65, 65)
 }
 
 .cadastre-link:hover{

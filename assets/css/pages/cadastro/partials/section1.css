@@ -49,10 +49,14 @@ p{
 }
 
 .input-field {
+    display: flex;
     position: relative;
     background: rgba(252, 222, 186, 0.8);
     border-radius: 12px;
-    padding: 10px;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #3c5052;
 }
 
 .input-field input {
@@ -63,7 +67,7 @@ p{
     width: 100%;
     outline: none;
     color: #3c5052;
-    padding: 5px 10px;
+    padding-left: 10px;
 }
 
 .senha {

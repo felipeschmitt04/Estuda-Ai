@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Estuda Aí</title>
     <link rel="stylesheet" href="./assets/css/pages/login.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
   <body>
@@ -16,26 +17,13 @@
         </div>
         <form>
           <div class="input-field">
-            <img
-              class="email-icon"
-              src="/assets/imgs/email-icon.svg"
-              alt="email-icon"
-            />
+            <i class='bx bxs-envelope' ></i>
             <input type="email" required placeholder="Email" />
           </div>
           <div class="input-field">
-            <img
-              class="senha-icon"
-              src="/assets/imgs/senha-icon.svg"
-              alt="senha-icon"
-            />
+            <i class='bx bxs-lock-alt'></i>
             <input type="password" id="password" placeholder="Senha" required />
-            <img
-              class="olho-icon"
-              src="/assets/imgs/olho-icon.svg"
-              alt="olho-icon"
-              id="togglePassword"
-            />
+            <i class='bx bx-low-vision' id="togglePassword"></i>
           </div>
           <div class="options">
             <a href="#">Esqueceu a senha?</a>
