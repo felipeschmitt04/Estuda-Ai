@@ -23,6 +23,17 @@ body{
     height: 100%;
     box-shadow: 5px 0 30px rgba(0,0,0,.2);
     transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.bottom_content {
+    margin-top: auto;
+    list-style: none;
 }
 
 .sidebar.active{
@@ -143,6 +154,31 @@ body{
 }
 
 .sidebar ul li a:hover{
+    color: white;
+    background: rgb(58, 58, 156);
+}
+
+
+.sidebar li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    line-height: 50px;
+}
+
+.sidebar li a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+    transition: all .4s ease;
+}
+
+.sidebar li a:hover{
     color: white;
     background: rgb(58, 58, 156);
 }
