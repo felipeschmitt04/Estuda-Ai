@@ -106,3 +106,17 @@ body{
     background-color: #3e5dc3;
     transition: 0.2s;
 }
+
+p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.cadastre-link{
+    color: #5059ff;
+    rgb(74, 65, 65)
+}
+
+.cadastre-link:hover{
+    text-decoration: underline;
+}

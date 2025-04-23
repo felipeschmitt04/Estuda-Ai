@@ -1,0 +1,6 @@
+@import "/assets/css/global/global.css";
+@import "/assets/css/pages/cadastro/partials/section1.css";
+
+.cadastro-card{
+    font-family: fontBold;
+}
