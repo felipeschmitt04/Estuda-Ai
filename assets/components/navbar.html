@@ -5,51 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/pages/navbar.css">
     <script defer src="/assets/js/navbar.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo" id="logo-button">
-            <img src="/assets/imgs/logo2.svg" width="40px">
-            <h2 class="textoLogo">Estuda Aí!</h2>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <img src="/assets/imgs/login-icon.svg" alt="login-icon" width="35px"/>
+                <div class="logo_name">Estuda aí!</div>
+            </div>
+            <i class='bx bx-dock-left' id='btn'></i>
         </div>
-        <ul class="nav-links" id="nav-links">
-            <li class="nav-item">
-                <button class="notification-icon" id="notification-icon">
-                    <img src="/assets/imgs/notification-icon.svg" width="30px">
-                </button>
-                <div class="dropdown" id="notification-box">Notificações aqui</div>
+
+        <div class="src">
+            <i class='bx bx-search-alt-2' ></i>
+            <input type="text" placeholder="Pesquisar...">
+        </div>
+
+        <ul class="nav">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
             </li>
-            <li class="nav-item">
-                <button class="message-icon" id="message-icon">
-                    <img src="/assets/imgs/message-icon.svg" width="30px">
-                </button>
-                <div class="dropdown" id="message-box">Mensagens aqui</div>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-message-dots'></i>
+                    <span class="link_name">Chat</span>
+                </a>
             </li>
-            <li class="nav-item profile-container">
-                <button class="profile-icon" id="profile-icon">
-                    <span style="margin-right: 10px;" class="username">@usuário</span> <img src="/assets/imgs/profile-icon.svg" width="30px">
-                </button>
-                <div  id="profile-box">
-                    <div class="modal" id="user-modal">
-                        <div class="modal-content">
-                            <span class="close" id="close-modal">&times;</span>
-                            <ul class="modal-options">
-                                <li>Opção 1</li>
-                                <li>Opção 2</li>
-                                <li>Opção 3</li>
-                                <li>Opção 4</li>
-                            </ul>
-                        </div>
-                        <div class="modal-content">
-                            <ul class="modal-options">
-                                <li class="modal-item"><img src="/assets/imgs/profile-icon-black.svg" width="20px">Usuário</li>
-                                <li class="modal-item"><img src="/assets/imgs/settings.svg" width="20px">Configurações</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-bar-chart-square' ></i>
+                    <span class="link_name">Estatísticas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-calendar' ></i>
+                    <span class="link_name">Calendário</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="link_name">Settings</span>
+                </a>
             </li>
         </ul>
-    </nav>
+    </div>
+
+    <div class="home_content">
+        <div class="text">Home Content</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+        let srcBtn = document.querySelector('.bx-search-alt-2');
+
+        btn.onclick = function(){
+            sidebar.classList.toggle('active');
+        }
+        srcBtn.onclick = function(){
+            sidebar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
+
+<!-- //min 2:52 https://www.youtube.com/watch?v=1xjvvp2nWP0 -->
